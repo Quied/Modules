@@ -1,6 +1,7 @@
 #include <iostream>
 #include <list>
 
+#include "Nodes.h"
 #include "pch.h"
 
 
@@ -26,6 +27,9 @@ public:
 
 };
 
+
+// ########
+
 TEST_F(Quied, Find) {
 
 	std::list<std::pair<int, std::string>> ::iterator it = this_fl.begin();
@@ -39,9 +43,15 @@ TEST_F(Quied, Size) {
 
 }
 
+// ##########
+
+
+
+
 int main(int argc, char* argv[]) {
 
 	std::cout << "This" << std::endl;
+
 	
 	testing::InitGoogleTest(&argc, argv);
 	return RUN_ALL_TESTS();
